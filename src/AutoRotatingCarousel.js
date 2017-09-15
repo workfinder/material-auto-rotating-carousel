@@ -82,12 +82,12 @@ const desktopStyles = {
 
 const mobileStyles = {
   root: {
-    height: '100vw',
-    width: '100vw',
     position: 'fixed',
-    zIndex: 1400,
+    top: 0,
+    right: 0,
+    bottom: 0,
     left: 0,
-    top: 0
+    zIndex: 1400,
   },
   content: {},
   dots: {
