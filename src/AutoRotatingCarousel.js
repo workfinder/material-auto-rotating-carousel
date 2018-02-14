@@ -82,12 +82,12 @@ const desktopStyles = {
 
 const mobileStyles = {
   root: {
-    height: '100%',
-    width: '100%',
     position: 'fixed',
     zIndex: 1400,
     left: 0,
     top: 0
+    height: '100%',
+    width: '100%',
   },
   content: {},
   dots: {
@@ -105,13 +105,13 @@ const mobileStyles = {
   },
   footerLandscape: {
     marginTop: -3,
-    transform: 'translateY(-50vh)',
+    transform: 'translateY(-50%)',
     textAlign: 'center',
     display: 'inline-block'
   },
   slide: {
     width: '100%',
-    height: '100vh'
+    height: '100%'
   }
 }
 
