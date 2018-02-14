@@ -62,6 +62,15 @@ const desktopStyles = {
     paddingTop: 36,
     margin: '0 auto'
   },
+  footerWrapper: {
+
+  },
+  footerWrapperLandscape: {
+    minWidth: 300,
+    maxWidth: 'calc(50% - 48px)',
+    padding: 24,
+    float: 'right'
+  },
   footer: {
     marginTop: -72,
     width: '100%',
@@ -112,6 +121,16 @@ const mobileStyles = {
     paddingTop: 20,
     margin: '0 auto'
   },
+  footerWrapper: {
+
+  },
+  footerWrapperLandscape: {
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    width: '50%',
+    textAlign: 'center'
+  },
   footer: {
     marginTop: -92,
     width: '100%',
@@ -119,10 +138,6 @@ const mobileStyles = {
     textAlign: 'center'
   },
   footerLandscape: {
-    marginTop: -3,
-    transform: 'translateY(-50%)',
-    textAlign: 'center',
-    display: 'inline-block'
   },
   slide: {
     width: '100%',
@@ -199,7 +214,7 @@ export default class AutoRotatingCarousel extends Component {
               }))}
             </Carousel>
           </Paper>
-          <div style={landscape ? {minWidth: 300, maxWidth: 'calc(50% - 48px)', padding: 24, float: 'right'} : null}>
+          <div style={landscape ? style.footerWrapperLandscape : null}>
             <div style={landscape ? style.footerLandscape : style.footer}>
               {this.props.label && <RaisedButton
                 label={this.props.label}
