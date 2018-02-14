@@ -85,11 +85,26 @@ const mobileStyles = {
     position: 'fixed',
     zIndex: 1400,
     left: 0,
-    top: 0
+    top: 0,
     height: '100%',
     width: '100%',
   },
-  content: {},
+  content: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    height: '100%',
+    width: '100%',
+  },
+  carouselWrapper: {
+    height: '100%'
+  },
+  carousel: {
+    height: '100%'
+  },
+  carouselContainer: {
+    height: '100%'
+  },
   dots: {
     margin: '0 auto'
   },
